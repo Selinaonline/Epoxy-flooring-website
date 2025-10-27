@@ -1,0 +1,14 @@
+# VS Code settings
+.vscode/
+.vscode/extensions/
+
+# Node modules
+node_modules/
+
+# Windows system / cache files
+AppData/
+*.bin
+*.blb
+Thumbs.db
+.DS_Store
+*.log
