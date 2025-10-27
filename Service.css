@@ -1,0 +1,168 @@
+.whole-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-most video {
+  width: 220px;
+  height: 3100px;
+  object-fit: cover;
+}
+.right-most video {
+  width: 220px;
+  height: 3100px;
+  object-fit: cover;
+  position: relative;
+}
+
+.contain-all {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.service-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #c2bea6;
+  margin-left: 260px;
+  margin-top: 50px;
+  text-decoration: underline;
+  margin-bottom: 100px;
+}
+.title-01,
+.title-02,
+.title-03,
+.title-04,
+.title-05 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #9f9b83;
+  margin-left: 25px;
+  text-decoration: underline;
+  width: 300px;
+  margin-right: 100px;
+}
+.forth-video video,
+.fifth-video video {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.first-video video,
+.second-video video,
+.third-video video {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+.first-video,
+.second-video,
+.third-video,
+.forth-video,
+.fifth-video {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  margin: 0;
+  margin-left: 80px;
+}
+.video-content-03 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+.video-content-04,
+.video-content-05 {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-content,
+.video-content-02,
+.video-content-05 {
+  margin-left: 0 auto; /* adjust spacing */
+}
+.discriptions-01,
+.discriptions-02 {
+  margin-bottom: 500px;
+  display: inline-block;
+  width: 500px;
+  color: #9f9b83;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.discriptions-03 {
+  margin-right: 100px;
+  display: inline-block;
+  width: 500px;
+  color: #9f9b83;
+
+  font-size: 20px;
+}
+.discriptions-04,
+.discriptions-05 {
+  width: 500px;
+  color: #9f9b83;
+  margin-left: 60px;
+
+  font-size: 20px;
+  display: block;
+  margin: 0;
+}
+.get-Freequote-01 {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 20px;
+  background-color: #ffd700;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: absolute;
+  bottom: -2297px;
+  right: 54%;
+  width: 150px;
+  height: 30px;
+}
+
+.get-Freequote-01:hover {
+  background-color: #333;
+}
+
+.back-home:hover {
+  background-color: #406181;
+  text-decoration: underline;
+}
+.back-home {
+  background-color: #ffd700;
+  color: black;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  bottom: -2300px;
+  margin-left: 20px;
+  left: 900px;
+  cursor: pointer;
+}
+
+.summary {
+  position: absolute;
+  bottom: -2200px;
+  left: 370px;
+  color: #9f9b83;
+  width: 800px;
+  font-size: 23px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: rgb(213, 215, 94);
+}
