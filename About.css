@@ -1,3 +1,6 @@
+/* =======================
+   ORIGINAL DESKTOP STYLES
+======================= */
 .About-container {
   width: 1300px;
   display: flex;
@@ -29,7 +32,6 @@
   margin-left: 80px;
   margin-top: 0;
 }
-
 .About-heading {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
@@ -58,4 +60,64 @@
 .body-03 {
   font-size: 20px;
   color: rgb(172, 160, 90);
+}
+
+/* =======================
+   RESPONSIVE ADJUSTMENTS
+======================= */
+@media (max-width: 1024px) {
+  .About-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .body-container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    text-align: center;
+  }
+
+  .the-rest {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .About-heading {
+    font-size: 24px;
+  }
+
+  .About-body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .title-01,
+  .title-02,
+  .title-03 {
+    font-size: 22px;
+  }
+
+  .body-01,
+  .body-02,
+  .body-03 {
+    font-size: 16px;
+  }
+
+  .back-home {
+    width: 90px;
+    height: 35px;
+    font-size: 11px;
+  }
 }
