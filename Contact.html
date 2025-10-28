@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <style>
+      /* General Body Styles */
       body {
         font-family: "Open Sans", sans-serif;
         font-size: 17px;
@@ -17,6 +18,8 @@
         margin: 0;
         padding: 0;
       }
+
+      /* Headings */
       h1,
       h2 {
         font-family: "Poppins", sans-serif;
@@ -24,45 +27,59 @@
         color: #222;
         margin-bottom: 10px;
       }
+
       h1 {
         font-size: 36px;
         text-align: center;
         margin-top: 20px;
       }
+
       h2 {
         font-size: 26px;
         margin-top: 30px;
       }
+
+      /* Paragraphs */
       p {
         font-size: 17px;
         color: #444;
         margin-bottom: 16px;
       }
+
+      /* Links */
       a {
         color: #a99109;
         text-decoration: none;
         font-weight: 500;
       }
+
       a:hover {
         text-decoration: underline;
         color: #87a903;
       }
+
+      /* Container */
       .container {
         max-width: 900px;
         margin: 0 auto;
         padding: 40px 20px;
       }
+
+      /* Contact Info */
       .contact-info p {
         font-size: 17px;
         line-height: 1.8;
         margin-bottom: 8px;
       }
+
+      /* Contact Form */
       .contact-form {
         background: #f9f9f9;
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
       }
+
       .contact-form input,
       .contact-form textarea {
         width: 100%;
@@ -72,6 +89,12 @@
         border-radius: 6px;
         font-size: 16px;
       }
+
+      .contact-form textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
       .contact-form button {
         background-color: #ffd700;
         color: black;
@@ -83,9 +106,12 @@
         cursor: pointer;
         font-size: 17px;
       }
+
       .contact-form button:hover {
         background-color: #b59e08;
       }
+
+      /* Back to Home Button */
       .back-home {
         display: inline-block;
         margin-top: 20px;
@@ -98,15 +124,38 @@
         cursor: pointer;
         font-size: 16px;
       }
+
       .back-home:hover {
         background-color: #222;
       }
+
+      /* Responsive Adjustments */
       @media (max-width: 768px) {
         h1 {
           font-size: 28px;
         }
         h2 {
           font-size: 22px;
+        }
+        .container {
+          padding: 20px 15px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+          font-size: 15px;
+          padding: 10px 12px;
+        }
+        .contact-form button {
+          width: 100%;
+          font-size: 16px;
+          padding: 12px 0;
+        }
+        .back-home {
+          display: block;
+          width: 90%;
+          max-width: 300px;
+          margin: 15px auto 0 auto;
+          text-align: center;
         }
       }
     </style>
