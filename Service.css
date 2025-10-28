@@ -82,7 +82,7 @@
 .video-content,
 .video-content-02,
 .video-content-05 {
-  margin-left: 0 auto; /* adjust spacing */
+  margin-left: 0 auto;
 }
 .discriptions-01,
 .discriptions-02 {
@@ -93,13 +93,11 @@
   margin-left: 5px;
   font-size: 20px;
 }
-
 .discriptions-03 {
   margin-right: 100px;
   display: inline-block;
   width: 500px;
   color: #9f9b83;
-
   font-size: 20px;
 }
 .discriptions-04,
@@ -107,7 +105,6 @@
   width: 500px;
   color: #9f9b83;
   margin-left: 60px;
-
   font-size: 20px;
   display: block;
   margin: 0;
@@ -165,4 +162,100 @@
   border-style: solid;
   border-radius: 30px;
   border-color: rgb(213, 215, 94);
+}
+
+/* =======================
+   RESPONSIVE ADJUSTMENTS
+======================= */
+@media (max-width: 1024px) {
+  .whole-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-most video,
+  .right-most video {
+    width: 100%;
+    height: auto;
+  }
+
+  .first-video,
+  .second-video,
+  .third-video,
+  .forth-video,
+  .fifth-video {
+    flex-direction: column;
+    width: 90%;
+    margin-left: 0;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .video-content,
+  .video-content-02,
+  .video-content-03,
+  .video-content-04,
+  .video-content-05 {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .discriptions-01,
+  .discriptions-02,
+  .discriptions-03,
+  .discriptions-04,
+  .discriptions-05 {
+    width: 100%;
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .title-01,
+  .title-02,
+  .title-03,
+  .title-04,
+  .title-05 {
+    width: 100%;
+    font-size: 22px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .summary {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 90%;
+    font-size: 18px;
+    margin: 30px auto;
+  }
+
+  .get-Freequote-01,
+  .back-home {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 20px auto;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-title {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .video-content p {
+    font-size: 14px;
+  }
+
+  .get-Freequote-01,
+  .back-home {
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+  }
 }
