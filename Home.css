@@ -1,3 +1,4 @@
+/* ================== ORIGINAL CSS ================== */
 html {
   scroll-behavior: smooth;
 }
@@ -19,7 +20,6 @@ html {
   padding-left: 70px;
   padding-top: 0;
 }
-
 .left-1 {
   font-size: 35px;
   font-weight: 550;
@@ -55,7 +55,6 @@ html {
 }
 .left-2 {
   font-size: 16px;
-
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -68,10 +67,9 @@ html {
   display: flex;
   flex-direction: row;
   margin-right: 0;
-  margin-left: 100px;
+  margin-left: 500px;
   align-items: center;
   width: 500px;
-  margin-left: 500px;
   justify-content: space-evenly;
 }
 .home a:link,
@@ -80,7 +78,6 @@ html {
   text-decoration: none;
   font-weight: bold;
 }
-
 .home a:hover,
 .home a:active {
   color: #e0c200;
@@ -89,28 +86,41 @@ html {
 .home {
   font-size: 18px;
 }
+.home a,
+.service a,
+.about a,
+.contact a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home a:hover,
+.service a:hover,
+.about a:hover,
+.contact a:hover {
+  color: #e6c200;
+  text-decoration: underline;
+}
 
 nav a {
-  color: #ffd700; /* normal color white */
+  color: #ffd700;
   text-decoration: none;
   transition: color 0.3s, transform 0.2s, border-bottom 0.3s;
   border-bottom: 2px solid transparent;
 }
-
 nav a:hover {
-  color: #e6c200; /* yellow hover */
+  color: #e6c200;
   transform: scale(1.05);
-  border-bottom: 2px solid #ffd700; /* small underline effect */
+  border-bottom: 2px solid #ffd700;
   cursor: pointer;
 }
-
 .service,
 .about,
 .contact {
   font-size: 18px;
   color: #ffd700;
   font-weight: bold;
-  padding-right: 10px;
 }
 .flooring-image {
   position: relative;
@@ -179,7 +189,6 @@ nav a:hover {
   text-align: center;
   justify-content: space-around;
 }
-
 .left-column {
   width: 400px;
   margin-left: 80px;
@@ -286,7 +295,6 @@ nav a:hover {
   bottom: 10%;
   left: 15%;
   font-weight: 600;
-
   font-size: 17px;
   background-color: white;
 }
@@ -302,7 +310,6 @@ nav a:hover {
   font-weight: 600;
   font-family: poppins-semibold, poppins, sans-serif;
 }
-
 .pic-1 {
   width: 100%;
   height: 400px;
@@ -315,7 +322,6 @@ nav a:hover {
   width: 100%;
   height: 400px;
 }
-
 .service-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -329,7 +335,6 @@ nav a:hover {
   height: 400px;
   object-fit: cover;
 }
-
 .showroom {
   width: 100%;
   height: 400px;
@@ -368,7 +373,6 @@ nav a:hover {
   margin-top: 20px;
   height: 600px;
 }
-
 /* Container */
 .quote-section {
   max-width: 900px;
@@ -376,7 +380,6 @@ nav a:hover {
   padding: 30px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .quote-box {
   background-color: #fdfdfd;
   border: 1px solid #ddd;
@@ -385,32 +388,27 @@ nav a:hover {
   padding: 40px;
   text-align: center;
 }
-
 .quote-box h2 {
   color: #1f4e79;
   margin-bottom: 15px;
   font-size: 30px;
 }
-
 .quote-box p {
   color: #555;
   margin-bottom: 30px;
   line-height: 1.6;
 }
-
 /* Form */
 .quote-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
 .form-row {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
 }
-
 .quote-form input,
 .quote-form textarea {
   width: 100%;
@@ -421,17 +419,14 @@ nav a:hover {
   outline: none;
   transition: border-color 0.3s;
 }
-
 .quote-form input:focus,
 .quote-form textarea:focus {
   border-color: #1f4e79;
 }
-
 .quote-form textarea {
   min-height: 120px;
   resize: vertical;
 }
-
 /* Submit Button */
 .submit-btn {
   padding: 15px 30px;
@@ -446,18 +441,15 @@ nav a:hover {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .submit-btn:hover {
   background-color: #796706;
 }
-
 /* Responsive */
 @media (max-width: 600px) {
   .form-row {
     flex-direction: column;
   }
 }
-
 .last-one {
   background-color: #333;
   width: 100%;
@@ -487,7 +479,6 @@ nav a:hover {
   font-size: 15px;
   cursor: pointer;
 }
-
 .email-both {
   display: flex;
   justify-content: right;
@@ -502,12 +493,9 @@ nav a:hover {
 .privacy-statement {
   width: 300px;
   color: #ffd700;
-
   text-decoration: none;
 }
 .privacy {
-  font-size: 15px;
-  color: #ffd700;
   font-size: 17px;
   font-weight: bold;
   cursor: pointer;
@@ -523,4 +511,118 @@ nav a:hover {
   width: 100px;
   background-color: #ffd700;
   color: black;
+}
+
+/* ================== MOBILE RESPONSIVE ADJUSTMENTS ================== */
+@media (max-width: 1024px) {
+  /* Header */
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 20px;
+  }
+  .left {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .right {
+    width: 100%;
+    margin: 10px 0 0 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* Hero section */
+  .text {
+    width: 90%;
+    max-width: 700px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text-1,
+  .text-2,
+  .text-3 {
+    font-size: clamp(16px, 5vw, 54px);
+  }
+  .see-more {
+    position: relative;
+    margin: 20px auto 0 auto;
+    left: 0;
+    right: 0;
+  }
+
+  /* About / long-text */
+  .long-text {
+    flex-direction: column;
+    text-align: left;
+    padding: 0 20px;
+  }
+  .left-column,
+  .right-column {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Services section */
+  .service-1,
+  .service-2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Text overlays on images */
+  .type-1,
+  .type-01,
+  .more,
+  .garage-text,
+  .industrial-text,
+  .showroom-text {
+    font-size: clamp(14px, 4vw, 20px);
+    left: 10%;
+    top: auto;
+    bottom: 10%;
+  }
+
+  /* Image sections */
+  .floor-image img,
+  .pic-1,
+  .pic2,
+  .pic3,
+  .garage,
+  .Industrial,
+  .showroom,
+  .image-be {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Quote form */
+  .quote-form input,
+  .quote-form textarea,
+  .submit-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+
+  /* Footer adjustments */
+  .last-one {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+  }
+  .phone-number,
+  .email-both,
+  .privacy-statement {
+    margin: 5px 0;
+    width: 100%;
+    justify-content: center;
+  }
 }
