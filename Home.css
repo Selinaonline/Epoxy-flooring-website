@@ -100,7 +100,6 @@ html {
 .about a:hover,
 .contact a:hover {
   color: #e6c200;
-  text-decoration: underline;
 }
 
 nav a {
