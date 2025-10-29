@@ -579,59 +579,19 @@ nav a:hover {
   }
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .text-1,
-  .text-2 {
-    font-size: clamp(20px, 6vw, 40px);
-  }
-  .text-3 {
-    font-size: clamp(16px, 5vw, 25px);
-  }
-  .type-1,
-  .type-01,
-  .more,
-  .garage-text,
-  .industrial-text,
-  .showroom-text {
-    font-size: 14px;
-    left: 10%;
-    bottom: 10%;
-  }
-  .long-text {
-    padding: 0 15px;
-  }
-  .quote-form input,
-  .quote-form textarea,
-  .submit-btn {
-    width: 100%;
-    margin-left: 0;
-  }
-  .last-one {
-    flex-direction: column;
-    height: auto;
-    padding: 20px 0;
-    text-align: center;
-  }
-  .phone-number,
-  .email-both,
-  .privacy-statement {
-    margin: 5px 0;
-    width: 100%;
-    justify-content: center;
-  }
-}
-/* ================== MOBILE FIX (DO NOT AFFECT DESKTOP) ================== */
+/* ================== MOBILE FIXES ================== */
 html, body {
-  overflow-x: hidden; /* stop sideways scroll */
-  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
+/* For screens 768px and below */
 @media (max-width: 768px) {
   body {
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    font-family: inherit;
   }
 
   * {
@@ -644,19 +604,144 @@ html, body {
     display: block;
   }
 
-  /* prevent zooming or horizontal movement */
-  .header,
-  .flooring-image,
-  .text,
-  .long-text,
-  .image-2,
-  .our-service,
-  .service-1,
-  .service-2,
-  .quote-section,
-  .last-one {
+  /* HEADER */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 12px 15px;
     width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .left-1 {
+    color: yellow;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .left-2 {
+    display: none; /* Hide smaller text on mobile to save space */
+  }
+
+  .right {
+    display: flex;
+    gap: 12px;
+  }
+
+  .right a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+
+  .right a:hover {
+    color: #d4c200;
+    text-decoration: underline;
+  }
+
+  /* HERO SECTION */
+  .image-text {
+    position: relative;
+    margin-top: 70px; /* make space for fixed header */
+  }
+
+  .flooring-image {
+    width: 100%;
+  }
+
+  .flooring-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 0 10px;
+  }
+
+  .text-1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: yellow;
+  }
+
+  .text-2 {
+    font-size: 18px;
+    margin-top: 4px;
+  }
+
+  .text-3 {
+    font-size: 14px;
+    margin-top: 6px;
+    color: #f1f1f1;
+  }
+
+  .see-more {
+    margin-top: 10px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .see-more:hover {
+    background-color: #d4c200;
+  }
+
+  /* WHO WE ARE & WHAT WE DO */
+  .long-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 15px;
+    background-color: #f9f9f9;
+  }
+
+  .long-text h2,
+  .long-text h3 {
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .long-text p {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* YELLOW CAPTIONS UNDER IMAGES */
+  .type-1,
+  .type-01,
+  .garage-text,
+  .industrial-text,
+  .showroom-text {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  /* Smooth scrolling fix */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Fix vertical spacing between sections */
+  section {
+    margin-bottom: 25px;
   }
 }
+
