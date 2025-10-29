@@ -1,3 +1,6 @@
+/* ================== FULL CSS FOR ERMIYAS EPOXY FLOORING ================== */
+
+/* ================== DESKTOP STYLES ================== */
 html {
   scroll-behavior: smooth;
 }
@@ -17,9 +20,7 @@ html {
   flex-direction: column;
   justify-content: center;
   padding-left: 70px;
-  padding-top: 0;
 }
-
 .left-1 {
   font-size: 35px;
   font-weight: 550;
@@ -67,10 +68,9 @@ html {
   display: flex;
   flex-direction: row;
   margin-right: 0;
-  margin-left: 100px;
+  margin-left: 500px;
   align-items: center;
   width: 500px;
-  margin-left: 500px;
   justify-content: space-evenly;
 }
 .home a:link,
@@ -79,7 +79,6 @@ html {
   text-decoration: none;
   font-weight: bold;
 }
-
 .home a:hover,
 .home a:active {
   color: #e0c200;
@@ -88,28 +87,39 @@ html {
 .home {
   font-size: 18px;
 }
-
+.home a,
+.service a,
+.about a,
+.contact a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+.home a:hover,
+.service a:hover,
+.about a:hover,
+.contact a:hover {
+  color: #e6c200;
+  text-decoration: underline;
+}
 nav a {
   color: #ffd700;
   text-decoration: none;
   transition: color 0.3s, transform 0.2s, border-bottom 0.3s;
   border-bottom: 2px solid transparent;
 }
-
 nav a:hover {
   color: #e6c200;
   transform: scale(1.05);
   border-bottom: 2px solid #ffd700;
   cursor: pointer;
 }
-
 .service,
 .about,
 .contact {
   font-size: 18px;
   color: #ffd700;
   font-weight: bold;
-  padding-right: 10px;
 }
 .flooring-image {
   position: relative;
@@ -178,7 +188,6 @@ nav a:hover {
   text-align: center;
   justify-content: space-around;
 }
-
 .left-column {
   width: 400px;
   margin-left: 80px;
@@ -277,7 +286,6 @@ nav a:hover {
   color: #ffd700;
   padding: 1px 3px;
   font-weight: 600;
-  font-family: poppins-semibold, poppins, sans-serif;
 }
 .more {
   position: absolute;
@@ -296,16 +304,13 @@ nav a:hover {
   color: #ffd700;
   padding: 1px 3px;
   font-weight: 600;
-  font-family: poppins-semibold, poppins, sans-serif;
 }
-
 .pic-1,
 .pic2,
 .pic3 {
   width: 100%;
   height: 400px;
 }
-
 .service-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -329,12 +334,10 @@ nav a:hover {
   top: 65%;
   left: 40%;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: bolder;
   background-color: rgb(128, 128, 128);
   color: #ffd700;
   padding: 1px 3px;
-  font-weight: bolder;
-  font-family: poppins-semibold, poppins, sans-serif;
 }
 .text-above {
   font-size: 40px;
@@ -420,11 +423,8 @@ nav a:hover {
 .submit-btn:hover {
   background-color: #796706;
 }
-@media (max-width: 600px) {
-  .form-row {
-    flex-direction: column;
-  }
-}
+
+/* Footer */
 .last-one {
   background-color: #333;
   width: 100%;
@@ -479,91 +479,184 @@ nav a:hover {
   text-decoration: underline;
   color: antiquewhite;
 }
-.Back-button {
-  width: 100px;
-  background-color: #ffd700;
-  color: black;
+
+/* ================== RESPONSIVE STYLES ================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 20px;
+  }
+  .left {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .right {
+    width: 100%;
+    margin: 10px 0 0 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .text {
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text-1,
+  .text-2,
+  .text-3 {
+    font-size: clamp(16px, 5vw, 54px);
+  }
+  .see-more {
+    position: relative;
+    margin: 20px auto 0 auto;
+    left: 0;
+  }
+  .long-text {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .left-column,
+  .right-column {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .service-1,
+  .service-2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .type-1,
+  .type-01,
+  .more,
+  .garage-text,
+  .industrial-text,
+  .showroom-text {
+    font-size: clamp(14px, 4vw, 20px);
+    left: 10%;
+    bottom: 10%;
+    text-align: left;
+  }
+  .floor-image img,
+  .pic-1,
+  .pic2,
+  .pic3,
+  .garage,
+  .Industrial,
+  .showroom,
+  .image-be {
+    width: 100%;
+    height: auto;
+  }
+  .quote-form input,
+  .quote-form textarea,
+  .submit-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .last-one {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .phone-number,
+  .email-both,
+  .privacy-statement {
+    width: 100%;
+    justify-content: center;
+    margin: 5px 0;
+  }
 }
 
-/* ✅ MOBILE FIXES (only affect screens 768px and below) */
+/* Mobile */
 @media (max-width: 768px) {
-  html, body {
+  .text-1,
+  .text-2 {
+    font-size: clamp(20px, 6vw, 40px);
+  }
+  .text-3 {
+    font-size: clamp(16px, 5vw, 25px);
+  }
+  .type-1,
+  .type-01,
+  .more,
+  .garage-text,
+  .industrial-text,
+  .showroom-text {
+    font-size: 14px;
+    left: 10%;
+    bottom: 10%;
+  }
+  .long-text {
+    padding: 0 15px;
+  }
+  .quote-form input,
+  .quote-form textarea,
+  .submit-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .last-one {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .phone-number,
+  .email-both,
+  .privacy-statement {
+    margin: 5px 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
+/* ================== MOBILE FIX (DO NOT AFFECT DESKTOP) ================== */
+html, body {
+  overflow-x: hidden; /* stop sideways scroll */
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
 
   * {
     box-sizing: border-box;
+  }
+
+  img, video {
     max-width: 100%;
-  }
-
-  .header {
-    flex-direction: column;
     height: auto;
-    text-align: center;
+    display: block;
   }
 
-  .left, .right {
-    width: 100%;
-    margin: 0;
-    padding: 10px 0;
-    justify-content: center;
-  }
-
-  .floor-image {
-    height: auto;
-  }
-
-  .text {
-    position: relative;
-    width: 100%;
-    left: 0;
-    top: 0;
-    padding: 20px;
-  }
-
-  .see-more {
-    position: relative;
-    margin: 20px auto;
-    left: 0;
-  }
-
-  .long-text {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .left-column, .right-column {
-    width: 90%;
-    margin: 20px 0;
-  }
-
-  .service-1, .service-2 {
-    grid-template-columns: 1fr;
-  }
-
-  .type-1, .type-01, .garage-text, .industrial-text, .showroom-text {
-    left: 10%;
-  }
-
-  .text-above {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .submit-btn {
-    width: 100%;
-    margin: 10px 0;
-  }
-
+  /* prevent zooming or horizontal movement */
+  .header,
+  .flooring-image,
+  .text,
+  .long-text,
+  .image-2,
+  .our-service,
+  .service-1,
+  .service-2,
+  .quote-section,
   .last-one {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-  }
-
-  .phone-number, .email-both, .privacy-statement {
-    margin: 10px 0;
-    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }
-
