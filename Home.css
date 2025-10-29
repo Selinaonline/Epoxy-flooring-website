@@ -1,4 +1,6 @@
-/* ================== ORIGINAL CSS ================== */
+/* ================== FULL CSS FOR ERMIYAS EPOXY FLOORING ================== */
+
+/* ================== DESKTOP STYLES ================== */
 html {
   scroll-behavior: smooth;
 }
@@ -18,7 +20,6 @@ html {
   flex-direction: column;
   justify-content: center;
   padding-left: 70px;
-  padding-top: 0;
 }
 .left-1 {
   font-size: 35px;
@@ -94,14 +95,13 @@ html {
   text-decoration: none;
   font-weight: bold;
 }
-
 .home a:hover,
 .service a:hover,
 .about a:hover,
 .contact a:hover {
   color: #e6c200;
+  text-decoration: underline;
 }
-
 nav a {
   color: #ffd700;
   text-decoration: none;
@@ -283,11 +283,9 @@ nav a:hover {
   left: 55%;
   font-size: 20px;
   background-color: gray;
-  text-shadow: 4px;
   color: #ffd700;
   padding: 1px 3px;
   font-weight: 600;
-  font-family: poppins-semibold, poppins, sans-serif;
 }
 .more {
   position: absolute;
@@ -303,21 +301,11 @@ nav a:hover {
   left: 40%;
   font-size: 20px;
   background-color: gray;
-  text-shadow: 4px;
   color: #ffd700;
   padding: 1px 3px;
   font-weight: 600;
-  font-family: poppins-semibold, poppins, sans-serif;
 }
-.pic-1 {
-  width: 100%;
-  height: 400px;
-}
-.pic2 {
-  width: 100%;
-  height: 400px;
-}
-.pic3 {
+.pic-1, .pic2, .pic3 {
   width: 100%;
   height: 400px;
 }
@@ -325,38 +313,23 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.garage {
-  width: 100%;
-  height: 400px;
-}
-.Industrial {
+.garage, .Industrial, .showroom {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
-.showroom {
-  width: 100%;
-  height: 400px;
-}
-.row-01,
-.row-02,
-.row-03 {
+.row-01, .row-02, .row-03 {
   position: relative;
 }
-.garage-text,
-.industrial-text,
-.showroom-text {
+.garage-text, .industrial-text, .showroom-text {
   position: absolute;
   top: 65%;
   left: 40%;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: bolder;
   background-color: rgb(128, 128, 128);
-  text-shadow: 4px;
   color: #ffd700;
   padding: 1px 3px;
-  font-weight: bolder;
-  font-family: poppins-semibold, poppins, sans-serif;
 }
 .text-above {
   font-size: 40px;
@@ -366,13 +339,13 @@ nav a:hover {
   margin-top: 10px;
   text-decoration: underline;
 }
-.image-below,
-.image-be {
+.image-below, .image-be {
   width: 100%;
   margin-top: 20px;
   height: 600px;
 }
-/* Container */
+
+/* Quote Section */
 .quote-section {
   max-width: 900px;
   margin: 50px auto;
@@ -397,7 +370,6 @@ nav a:hover {
   margin-bottom: 30px;
   line-height: 1.6;
 }
-/* Form */
 .quote-form {
   display: flex;
   flex-direction: column;
@@ -408,8 +380,7 @@ nav a:hover {
   gap: 15px;
   flex-wrap: wrap;
 }
-.quote-form input,
-.quote-form textarea {
+.quote-form input, .quote-form textarea {
   width: 100%;
   padding: 12px 15px;
   border-radius: 8px;
@@ -418,15 +389,13 @@ nav a:hover {
   outline: none;
   transition: border-color 0.3s;
 }
-.quote-form input:focus,
-.quote-form textarea:focus {
+.quote-form input:focus, .quote-form textarea:focus {
   border-color: #1f4e79;
 }
 .quote-form textarea {
   min-height: 120px;
   resize: vertical;
 }
-/* Submit Button */
 .submit-btn {
   padding: 15px 30px;
   width: 400px;
@@ -443,12 +412,8 @@ nav a:hover {
 .submit-btn:hover {
   background-color: #796706;
 }
-/* Responsive */
-@media (max-width: 600px) {
-  .form-row {
-    flex-direction: column;
-  }
-}
+
+/* Footer */
 .last-one {
   background-color: #333;
   width: 100%;
@@ -468,11 +433,8 @@ nav a:hover {
 .phone {
   height: 30px;
   border-radius: 15px;
-  text-decoration: none;
-  color: inherit;
 }
-.number,
-.emails {
+.number, .emails {
   color: #ffd700;
   padding-left: 10px;
   font-size: 15px;
@@ -492,7 +454,6 @@ nav a:hover {
 .privacy-statement {
   width: 300px;
   color: #ffd700;
-  text-decoration: none;
 }
 .privacy {
   font-size: 17px;
@@ -500,21 +461,15 @@ nav a:hover {
   cursor: pointer;
   color: inherit;
 }
-.number:hover,
-.emails:hover,
-.privacy:hover {
+.number:hover, .emails:hover, .privacy:hover {
   text-decoration: underline;
   color: antiquewhite;
 }
-.Back-button {
-  width: 100px;
-  background-color: #ffd700;
-  color: black;
-}
 
-/* ================== MOBILE RESPONSIVE ADJUSTMENTS ================== */
+/* ================== RESPONSIVE STYLES ================== */
+
+/* Tablet */
 @media (max-width: 1024px) {
-  /* Header */
   .header {
     flex-wrap: wrap;
     height: auto;
@@ -532,94 +487,91 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 15px;
   }
-
-  /* Hero section */
   .text {
     width: 90%;
-    max-width: 700px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  .text-1,
-  .text-2,
-  .text-3 {
+  .text-1, .text-2, .text-3 {
     font-size: clamp(16px, 5vw, 54px);
   }
   .see-more {
     position: relative;
     margin: 20px auto 0 auto;
     left: 0;
-    right: 0;
   }
-
-  /* About / long-text */
   .long-text {
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     padding: 0 20px;
   }
-  .left-column,
-  .right-column {
+  .left-column, .right-column {
     width: 100%;
     margin: 10px 0;
   }
-
-  /* Services section */
-  .service-1,
-  .service-2 {
+  .service-1, .service-2 {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
-  /* Text overlays on images */
-  .type-1,
-  .type-01,
-  .more,
-  .garage-text,
-  .industrial-text,
-  .showroom-text {
+  .type-1, .type-01, .more, .garage-text, .industrial-text, .showroom-text {
     font-size: clamp(14px, 4vw, 20px);
     left: 10%;
-    top: auto;
     bottom: 10%;
+    text-align: left;
   }
-
-  /* Image sections */
-  .floor-image img,
-  .pic-1,
-  .pic2,
-  .pic3,
-  .garage,
-  .Industrial,
-  .showroom,
-  .image-be {
+  .floor-image img, .pic-1, .pic2, .pic3, .garage, .Industrial, .showroom, .image-be {
     width: 100%;
     height: auto;
   }
-
-  /* Quote form */
-  .quote-form input,
-  .quote-form textarea,
-  .submit-btn {
+  .quote-form input, .quote-form textarea, .submit-btn {
     width: 100%;
     margin-left: 0;
   }
   .form-row {
     flex-direction: column;
   }
-
-  /* Footer adjustments */
   .last-one {
     flex-direction: column;
-    text-align: center;
     height: auto;
     padding: 10px 0;
+    text-align: center;
   }
-  .phone-number,
-  .email-both,
-  .privacy-statement {
+  .phone-number, .email-both, .privacy-statement {
+    width: 100%;
+    justify-content: center;
+    margin: 5px 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .text-1, .text-2 {
+    font-size: clamp(20px, 6vw, 40px);
+  }
+  .text-3 {
+    font-size: clamp(16px, 5vw, 25px);
+  }
+  .type-1, .type-01, .more, .garage-text, .industrial-text, .showroom-text {
+    font-size: 14px;
+    left: 10%;
+    bottom: 10%;
+  }
+  .long-text {
+    padding: 0 15px;
+  }
+  .quote-form input, .quote-form textarea, .submit-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .last-one {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .phone-number, .email-both, .privacy-statement {
     margin: 5px 0;
     width: 100%;
     justify-content: center;
