@@ -1,449 +1,296 @@
-/* ================== FULL CSS FOR ERMIYAS EPOXY FLOORING ================== */
-
-/* ================== GLOBAL STYLES ================== */
-html,
-body {
-  scroll-behavior: smooth;
-  overflow-x: hidden; /* prevent horizontal scrolling */
+/* ========================
+   BASE / DESKTOP STYLES
+======================== */
+* {
   margin: 0;
   padding: 0;
-  max-width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
-/* ================== HEADER ================== */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* Header */
 .header {
-  width: 100%;
-  height: 100px;
-  background-color: rgb(66, 63, 63);
   display: flex;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  flex-wrap: wrap;
-}
-.left {
-  width: 500px;
-  max-width: 100%;
-  height: 95px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 70px;
-}
-.left-1 {
-  font-size: 35px;
-  font-weight: 550;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #111;
   color: white;
-  text-decoration: underline #ffd700 2px;
-  text-shadow: 0 0 0.8px;
-}
-.span {
-  background: #ffd700;
-  color: rgb(66, 63, 63);
-  line-height: 33px;
-  display: inline-block;
-}
-.span-2 {
-  background: #ffd700;
-  color: rgb(39, 38, 38);
-  line-height: 36px;
-  display: inline-block;
-  text-decoration: underline #ffd700 3px;
-}
-.left-2 {
-  font-size: 16px;
-  color: white;
-  padding-top: 3px;
-  letter-spacing: 2px;
-  text-shadow: 0 0 0.8px;
-}
-.right {
-  display: flex;
-  flex-direction: row;
-  margin-left: 500px;
-  width: 500px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-.right div {
-  font-size: 18px;
-  font-weight: bold;
-}
-.right a {
-  color: #ffd700;
-  text-decoration: none;
-}
-.right a:hover {
-  color: #e6c200;
-  text-decoration: underline;
-  cursor: pointer;
 }
 
-/* ================== HERO SECTION ================== */
-.flooring-image {
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6600;
+}
+
+/* Hero Section */
+.hero {
   position: relative;
-  margin-top: 100px;
+  height: 90vh;
+  background: url('images/hero-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
 }
-.floor-image {
-  width: 100%;
-  display: block;
-  height: 500px;
-  object-fit: cover;
-}
+
 .text {
   position: absolute;
-  width: 90%;
-  max-width: 700px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 10%;
 }
-.text-1,
-.text-2,
-.text-3 {
-  color: rgb(36, 36, 36);
-}
+
 .text-1 {
-  font-size: 54px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.text-2 {
+  font-size: 36px;
   font-weight: 500;
 }
-.text-2 {
-  font-size: 52px;
-  font-weight: 400;
-}
+
 .text-3 {
-  font-size: 35px;
-  font-weight: 300;
+  font-size: 22px;
+  margin-top: 10px;
 }
+
 .see-more {
-  width: 100px;
-  height: 40px;
-  background-color: #ffd700;
-  color: black;
-  font-size: large;
-  font-weight: 300;
-  border-radius: 25px;
-  border-color: rgb(68, 68, 68);
-  margin: 20px auto 0 auto;
-  cursor: pointer;
-  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
 }
+
 .see-more:hover {
-  background-color: #7d6b0c;
-  text-decoration: underline;
+  background-color: #ff8533;
 }
 
-/* ================== ABOUT / LONG TEXT ================== */
-.long-text {
-  display: flex;
+/* Services */
+.services {
+  padding: 80px 60px;
+  background-color: #f8f8f8;
+}
+
+.services h2 {
   text-align: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 60px 0;
-}
-.left-column,
-.right-column {
-  width: 400px;
-  max-width: 90%;
-  margin: 10px;
-}
-.first-line,
-.servicce {
-  font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
-  border-radius: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  padding-left: 20px;
-  background-color: rgba(98, 96, 96, 0.689);
-  color: white;
-}
-.line-2,
-.line-3,
-.second-line {
-  font-size: 20px;
-  color: gray;
+  font-size: 32px;
+  margin-bottom: 50px;
 }
 
-/* ================== IMAGE OVERLAY SECTION ================== */
-.image-2 {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-.second-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.inside-text {
-  width: 90%;
-  max-width: 500px;
-  position: absolute;
-  left: 50%;
-  bottom: 35%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-.text-inside {
-  font-size: 50px;
-  font-weight: 600;
-  text-decoration: underline #ffd700 3px;
-  margin-bottom: 30px;
-  color: white;
-}
-.text-inside2 {
-  font-size: 30px;
-  color: white;
-}
-
-/* ================== SERVICES ================== */
-.our-service {
-  width: 100%;
-  height: 180px;
-  background-color: gray;
-  position: relative;
-}
-.service-text {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 60px;
-  font-weight: 600;
-  color: #ffd700;
-}
-.service-1,
-.service-2 {
+.services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.type-1pic,
-.pic-2,
-.pic-3,
-.row-01,
-.row-02,
-.row-03 {
-  position: relative;
-}
-.type-1,
-.type-01,
-.more,
-.garage-text,
-.industrial-text,
-.showroom-text {
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  font-size: 20px;
-  color: #ffd700;
-  background-color: rgba(128, 128, 128, 0.6);
-  padding: 1px 3px;
-  font-weight: 600;
-}
-.pic-1,
-.pic2,
-.pic3,
-.garage,
-.Industrial,
-.showroom {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
+  gap: 30px;
 }
 
-/* ================== CUSTOM EXPERT ================== */
-.text-above {
-  font-size: 40px;
-  font-weight: 600;
-  color: #1e1a05a9;
-  text-decoration: underline;
-  text-align: center;
-  margin: 20px 0;
-}
-.image-below,
-.image-be {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  margin-top: 20px;
-}
-
-/* ================== QUOTE FORM ================== */
-.quote-section {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 30px;
-}
-.quote-box {
-  background-color: #fdfdfd;
-  border: 1px solid #ddd;
+.service-card {
+  background: white;
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
-  padding: 40px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Quote Form */
+.quote {
+  background: #111;
+  color: white;
+  padding: 80px 60px;
   text-align: center;
 }
-.quote-box h2 {
-  color: #1f4e79;
+
+.quote h2 {
   font-size: 30px;
-  margin-bottom: 15px;
-}
-.quote-box p {
-  color: #555;
   margin-bottom: 30px;
-  line-height: 1.6;
 }
+
 .quote-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
 }
-.form-row {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
+
 .quote-form input,
 .quote-form textarea {
-  width: 100%;
-  padding: 12px 15px;
+  width: 500px;
+  padding: 12px;
   border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-  outline: none;
-  transition: border-color 0.3s;
-}
-.quote-form input:focus,
-.quote-form textarea:focus {
-  border-color: #1f4e79;
-}
-.quote-form textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-.submit-btn {
-  width: 100%;
-  padding: 15px;
-  background-color: #ffd700;
-  color: black;
   border: none;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  outline: none;
 }
+
+.submit-btn {
+  background-color: #ff6600;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 .submit-btn:hover {
-  background-color: #796706;
+  background-color: #ff8533;
 }
 
-/* ================== FOOTER ================== */
-.last-one {
-  background-color: #333;
-  width: 100%;
+/* Footer */
+.footer {
+  background: #222;
+  color: white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px 0;
-}
-.phone-number,
-.email-both,
-.privacy-statement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px 0;
-}
-.phone,
-.email-icon {
-  height: 30px;
-  border-radius: 15px;
-}
-.number,
-.emails,
-.privacy {
-  color: #ffd700;
-  cursor: pointer;
-  margin-left: 10px;
-}
-.number:hover,
-.emails:hover,
-.privacy:hover {
-  text-decoration: underline;
-  color: antiquewhite;
+  padding: 40px 60px;
 }
 
-/* ================== RESPONSIVE ================== */
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
 
-/* Tablet & Mobile */
+.footer h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* ========================
+   RESPONSIVE DESIGN
+======================== */
+
+/* Tablet (≤1024px) */
 @media (max-width: 1024px) {
-  .right {
-    margin-left: 0;
-    justify-content: center;
+  .header {
+    padding: 20px 30px;
   }
-  .long-text {
-    flex-direction: column;
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quote-form input,
+  .quote-form textarea {
+    width: 90%;
+  }
+
+  .footer {
+    flex-wrap: wrap;
     text-align: center;
-  }
-  .service-1,
-  .service-2 {
-    grid-template-columns: 1fr;
-  }
-  .type-1,
-  .type-01,
-  .more,
-  .garage-text,
-  .industrial-text,
-  .showroom-text {
-    font-size: clamp(14px, 4vw, 20px);
-    left: 10%;
-    bottom: 10%;
-  }
-  .text-inside,
-  .text-inside2 {
-    font-size: clamp(16px, 5vw, 50px);
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 
-/* Mobile Small */
+/* Mobile (≤768px) */
 @media (max-width: 768px) {
-  .text-1,
-  .text-2 {
-    font-size: clamp(20px, 6vw, 40px);
+  /* Global fix */
+  html, body {
+    overflow-x: hidden;
   }
-  .text-3 {
-    font-size: clamp(16px, 5vw, 25px);
+
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
   }
-  .type-1,
-  .type-01,
-  .more,
-  .garage-text,
-  .industrial-text,
-  .showroom-text {
-    font-size: 14px;
-    left: 10%;
-    bottom: 10%;
-  }
-  .long-text {
-    padding: 0 15px;
-  }
-  .quote-form input,
-  .quote-form textarea,
-  .submit-btn {
-    width: 100%;
-    margin-left: 0;
-  }
-  .last-one {
+
+  .header {
     flex-direction: column;
-    height: auto;
     text-align: center;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .text {
+    position: static;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .text-1 {
+    font-size: 32px;
+  }
+
+  .text-2 {
+    font-size: 24px;
+  }
+
+  .text-3 {
+    font-size: 18px;
+  }
+
+  .see-more {
+    margin-top: 15px;
+  }
+
+  .services {
+    padding: 60px 20px;
+  }
+
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .quote {
+    padding: 60px 20px;
+  }
+
+  .quote-form input,
+  .quote-form textarea {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
   }
 }
