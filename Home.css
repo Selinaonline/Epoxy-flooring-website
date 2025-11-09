@@ -3,6 +3,7 @@
 /* ================== DESKTOP STYLES ================== */
 html {
   scroll-behavior: smooth;
+   overflow-x: hidden;
 }
 .header {
   width: 100%;
