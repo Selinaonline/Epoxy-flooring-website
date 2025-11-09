@@ -13,7 +13,7 @@ html, body {
 }
 
 .header {
-  width: 100vh;
+  width: 100px;
     height: 100px; 
   background-color: rgb(66, 63, 63);
   display: flex;
