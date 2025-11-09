@@ -1,18 +1,12 @@
 /* ================== FULL CSS FOR ERMIYAS EPOXY FLOORING ================== */
 
 /* ================== DESKTOP STYLES ================== */
-html, body {
+html {
   scroll-behavior: smooth;
-  overflow-y: auto;
-  overflow-x: hidden;
-
 }
-
-
-
 .header {
-  width: 100px;
-    height: 100px; 
+  width: 100%;
+  height: 100px;
   background-color: rgb(66, 63, 63);
   display: flex;
   position: fixed;
