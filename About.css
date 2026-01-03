@@ -151,6 +151,9 @@
    display: flex;
    align-items:center;
 }
+.contact,.email,.phone{
+   font:15px;
+}
 
 
 /* =======================
