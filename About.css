@@ -1,9 +1,16 @@
 /* =======================
    ORIGINAL DESKTOP STYLES
 ======================= */
-.values p {
-  margin-bottom: 10px;
+
+.values {
+  list-style: none;   /* removes black dots */
+  padding-left: 0;    /* removes left indentation */
 }
+
+.values li {
+  margin-bottom: 8px; /* space between lines */
+}
+
 
 
 .About-container {
