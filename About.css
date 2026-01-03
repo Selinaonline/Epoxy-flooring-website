@@ -63,6 +63,7 @@
   margin-top: 0;
   margin-left: 200px;
   margin-bottom:100px;
+   padding: 20px;
 }
 .title-01,
 .title-02,
@@ -77,13 +78,18 @@
   font-size: 20px;
   color: rgb(172, 160, 90);
 }
-.body-01{
-   margin-top: 0;
+
+.body-03 values{
+  list-style: none;       /* remove bullets */
+  padding-left: 0;
+  margin: 10px 0 20px 0;
 }
 .footer{
-   background-color:black;
-   width: 100%;
-   height: 100px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;   
 }
 
 /* =======================
