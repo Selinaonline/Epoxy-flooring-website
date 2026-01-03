@@ -1,9 +1,10 @@
 /* =======================
    ORIGINAL DESKTOP STYLES
 ======================= */
-.values li {
-  margin-bottom: 8px; /* adjust: 6–12px looks nice */
+.values p {
+  margin-bottom: 10px;
 }
+
 
 .About-container {
   width: 1300px;
