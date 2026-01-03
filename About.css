@@ -144,13 +144,13 @@
    /* ensures spacing above footer */
 }
 .right{
-   width: 420px;
+   width: 450px;
    height: 60px;
    display: flex;
    flex-direction: column;
+   margin-right: 50px;
 }
 .email,.phone{
-   margin:0;
    font-size: 14px;
 }
 
