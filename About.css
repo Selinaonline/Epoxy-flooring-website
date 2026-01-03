@@ -140,7 +140,15 @@
   padding: 20px;
   margin-top: 20px;   
    border-radius: 15px;
+   display: flex;
+    justify-content: space-between;
+   
    /* ensures spacing above footer */
+}
+.right{
+   width: 220px;
+   height: 50px;
+   align-items:center;
 }
 
 
