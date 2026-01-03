@@ -148,8 +148,10 @@
    height: 60px;
    display: flex;
    flex-direction: column;
+}
+.email,.phone{
    margin:0;
-   font-size:15px;
+   font-size: 14px;
 }
 
 
