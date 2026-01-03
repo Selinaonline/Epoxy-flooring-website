@@ -59,38 +59,49 @@
 }
 .the-rest {
   width: 600px;
-  height: 200px;
+  height: auto;         /* allow height to grow with content */
   margin-top: 0;
   margin-left: 200px;
-  margin-bottom:100px;
-   padding: 20px;
+  margin-bottom: 100px;
+  padding: 20px;
 }
+
 .title-01,
 .title-02,
 .title-03 {
   font-size: 30px;
   color: rgb(172, 160, 90);
- text-decoration: underline;
+  text-decoration: underline;
 }
+
 .body-01,
 .body-02,
 .body-03 {
   font-size: 20px;
   color: rgb(172, 160, 90);
+  margin-bottom: 20px;  /* add spacing after paragraphs */
 }
 
-.body-03 values{
+/* Fixed selector for the values list */
+.body-03.values {
   list-style: none;       /* remove bullets */
   padding-left: 0;
-  margin: 10px 0 20px 0;
+  margin-top: 10px;
+  margin-bottom: 40px;    /* more space before footer */
 }
-.footer{
+
+.body-03.values li {
+  margin-bottom: 8px;     /* space between list items */
+}
+
+.footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;   
+  margin-top: 20px;       /* ensures spacing above footer */
 }
+
 
 /* =======================
    RESPONSIVE ADJUSTMENTS
