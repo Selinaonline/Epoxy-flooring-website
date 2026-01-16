@@ -745,6 +745,13 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .see-more {
+    margin-top: 10px;   /* was too large */
+  }
+}
+
+
 /* ================== SERVICES GRID FIX ================== */
 @media (max-width: 1024px) {
   .service-1,
