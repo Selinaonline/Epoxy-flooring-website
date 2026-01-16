@@ -747,7 +747,7 @@ body {
 
 @media (max-width: 1024px) {
   .see-more {
-    margin-top: 10px;   /* was too large */
+    margin-top: 5px;   /* was too large */
   }
 }
 
