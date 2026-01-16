@@ -621,3 +621,118 @@ nav a:hover {
     justify-content: center;
   }
 }
+
+
+/* ================== GLOBAL FIX ================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* ================== HEADER FIX ================== */
+@media (max-width: 1024px) {
+  .right {
+    margin-left: 0;
+  }
+}
+
+/* ================== HERO SECTION FIX ================== */
+.image-text {
+  position: relative;
+}
+
+.text {
+  max-width: 90%;
+}
+
+@media (max-width: 1024px) {
+  .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  .see-more {
+    position: static;
+    margin: 20px auto 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .floor-image {
+    height: auto;
+  }
+}
+
+/* ================== SERVICES TITLE FIX ================== */
+@media (max-width: 1024px) {
+  .service-text {
+    position: static;
+    text-align: center;
+    padding-top: 40px;
+    font-size: clamp(32px, 6vw, 50px);
+  }
+}
+
+/* ================== IMAGE OVERLAY FIX ================== */
+@media (max-width: 1024px) {
+  .inside-text {
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .text-inside {
+    font-size: clamp(28px, 6vw, 45px);
+  }
+
+  .text-inside2 {
+    font-size: clamp(18px, 4vw, 28px);
+  }
+}
+
+/* ================== CUSTOM EXPERT FIX ================== */
+@media (max-width: 1024px) {
+  .text-above {
+    margin-left: 0;
+    text-align: center;
+    font-size: clamp(24px, 5vw, 40px);
+  }
+
+  .image-be {
+    height: auto;
+  }
+}
+
+/* ================== SERVICES GRID FIX ================== */
+@media (max-width: 1024px) {
+  .service-1,
+  .service-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .pic-1,
+  .pic2,
+  .pic3,
+  .garage,
+  .Industrial,
+  .showroom {
+    height: auto;
+  }
+}
+
+/* ================== FOOTER FIX ================== */
+@media (max-width: 768px) {
+  .last-one {
+    gap: 10px;
+  }
+}
+
