@@ -52,7 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 70px;
+ 
 }
 .left-1 {
   font-size: 35px;
