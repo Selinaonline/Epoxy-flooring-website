@@ -489,15 +489,160 @@ body {
   }
 }
 
-/* Mobile */
+/* ================== TABLET ================== */
+@media (max-width: 1024px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .right {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .text {
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .see-more {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 15px auto 0;
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+  }
+
+  .service-text {
+    position: static;
+    text-align: center;
+    padding-top: 20px;
+    font-size: clamp(32px, 6vw, 50px);
+  }
+
+  .inside-text {
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .text-inside {
+    font-size: clamp(28px, 6vw, 45px);
+  }
+
+  .text-inside2 {
+    font-size: clamp(18px, 4vw, 28px);
+  }
+
+  .text-above {
+    margin-left: 0;
+    text-align: center;
+    font-size: clamp(24px, 5vw, 40px);
+  }
+
+  .image-be {
+    height: auto;
+  }
+
+  .service-1,
+  .service-2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .type-1,
+  .type-01,
+  .more,
+  .garage-text,
+  .industrial-text,
+  .showroom-text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    padding: 5px 0;
+    margin-bottom: 5px;
+  }
+
+  .floor-image,
+  .pic-1,
+  .pic2,
+  .pic3,
+  .garage,
+  .Industrial,
+  .showroom,
+  .image-be {
+    height: auto;
+  }
+}
+
+/* ================== MOBILE ================== */
 @media (max-width: 768px) {
+  .text {
+    top: 35%;
+  }
+
   .text-1,
   .text-2 {
-    font-size: clamp(20px, 6vw, 40px);
+    font-size: clamp(22px, 6vw, 40px);
   }
 
   .text-3 {
     font-size: clamp(16px, 5vw, 25px);
+  }
+
+  .see-more {
+    margin: 10px auto 20px;
+    width: 120px;
+    text-decoration: underline; /* underline on mobile */
+  }
+
+  .service-1,
+  .service-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .type-1,
+  .type-01,
+  .more,
+  .garage-text,
+  .industrial-text,
+  .showroom-text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    background-color: gray;
+    padding: 5px 0;
+  }
+
+  .floor-image,
+  .pic-1,
+  .pic2,
+  .pic3,
+  .garage,
+  .Industrial,
+  .showroom,
+  .image-be {
+    width: 100%;
+    height: auto;
   }
 
   .submit-btn {
@@ -509,5 +654,14 @@ body {
     gap: 10px;
     height: auto;
     padding: 20px 0;
+    text-align: center;
+  }
+
+  .phone-number,
+  .email-both,
+  .privacy-statement {
+    width: 100%;
+    justify-content: center;
+    margin: 5px 0;
   }
 }
