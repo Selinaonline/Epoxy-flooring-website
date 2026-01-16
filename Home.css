@@ -621,16 +621,23 @@ nav a:hover {
   .text-3 {
     font-size: clamp(16px, 5vw, 25px);
   }
-  .type-1,
-  .type-01,
-  .more,
-  .garage-text,
-  .industrial-text,
-  .showroom-text {
-    font-size: 14px;
-    left: 10%;
-    bottom: 10%;
-  }
+ .type-1,
+.type-01,
+.more,
+.garage-text,
+.industrial-text,
+.showroom-text {
+    font-size: 14px;      /* keep font smaller for mobile */
+    position: relative;    /* remove absolute positioning */
+    top: auto;
+    left: auto;
+    bottom: auto;
+    width: 100%;           /* fill the card width */
+    text-align: center;    /* centered below image */
+    padding: 5px 0;        /* optional spacing */
+    background-color: transparent; /* remove gray box if desired */
+}
+
   .long-text {
     padding: 0 15px;
   }
